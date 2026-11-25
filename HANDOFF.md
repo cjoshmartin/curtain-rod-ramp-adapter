@@ -17,6 +17,7 @@ Last updated: 2026-11-26
 | `curtain_rod_ramp.3mf` | Bambu Studio project with the print settings below. Open it as a project, not "geometry only". |
 | `README.md` | Public overview: how it works, fitting it to a rod, printing and installing. |
 | `HANDOFF.md` | This file. |
+| `docs/measuring.md` | Design record: the diagram page used to work out the measurements, moved into the repo. Its pictures are in `docs/images/`. |
 | `images/` | README pictures. `sh images/render.sh` re-renders them from `images/views.scad`. |
 | `LICENSE` | CC BY 4.0. |
 

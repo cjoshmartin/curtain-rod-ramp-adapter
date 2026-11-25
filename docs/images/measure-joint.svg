@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" role="img" aria-labelledby="f1-title">
+  <title id="f1-title">Side view of the joint. Measure the bare thin rod from the thick tube's rim to the first bracket or end cap.</title>
+<style>
+  :root {
+    --sheet: #ffffff; --fg: #17202c; --muted: #5b6677; --line: #d7dde5;
+    --rod: #c7ced8; --tube: #a2acba; --edge: #687385; --bracket: #3c4450; --wall: #e1e5eb;
+    --ring: #b4842c; --adapter: #2a6fd4; --measure: #d4460c;
+    --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sheet: #171c24; --fg: #e4e8ee; --muted: #9ba6b5; --line: #2a323d;
+      --rod: #48525f; --tube: #5f6a79; --edge: #9ba6b5; --bracket: #c5ccd6; --wall: #252c36;
+      --ring: #d8a851; --adapter: #5d9eff; --measure: #ff7b44;
+    }
+  }
+  .bg { fill: var(--sheet); stroke: var(--line); stroke-width: 1; }
+  .rod { fill: var(--rod); stroke: var(--edge); stroke-width: 1.5; }
+  .tube { fill: var(--tube); stroke: var(--edge); stroke-width: 1.5; }
+  .rim { stroke: var(--fg); stroke-width: 3; }
+  .bracket rect { fill: var(--bracket); }
+  .ring { fill: var(--ring); }
+  .ring-stroke { fill: none; stroke: var(--ring); stroke-width: 15; }
+  .adapter { fill: var(--adapter); fill-opacity: 0.32; stroke: var(--adapter); stroke-width: 2.5; stroke-linejoin: round; }
+  .adapter-solid { fill: var(--adapter); fill-opacity: 0.6; stroke: var(--adapter); stroke-width: 2.5; stroke-linejoin: round; }
+  .wall { fill: var(--wall); stroke: var(--edge); stroke-width: 1.5; }
+  .catch { fill: none; stroke: var(--fg); stroke-width: 2; }
+  .ext { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 4; }
+  .ln-measure { stroke: var(--measure); stroke-width: 2.5; }
+  .ln-muted { stroke: var(--muted); stroke-width: 1.5; }
+  .ln-fg { stroke: var(--fg); stroke-width: 2; }
+  .ln-thin { stroke: var(--fg); stroke-width: 1.2; }
+  .f-measure { fill: var(--measure); }
+  .f-muted { fill: var(--muted); }
+  .f-fg { fill: var(--fg); }
+  .t { fill: var(--fg); font-family: var(--font-sans); font-size: 14px; font-weight: 500; }
+  .t-cap { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; }
+  .t-mono { font-family: var(--font-mono); font-size: 13px; font-weight: 400; }
+  .t-muted { fill: var(--muted); font-weight: 400; }
+  .t-measure { fill: var(--measure); font-weight: 700; letter-spacing: 0.06em; }
+</style>
+  <defs>
+    <linearGradient id="f1-grad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset="0.06" stop-color="#fff"/>
+      <stop offset="0.94" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <mask id="f1-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="340">
+      <rect x="0" y="0" width="900" height="340" fill="url(#f1-grad)"/>
+    </mask>
+    <marker id="f1-am" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,1 L10,5 L0,9 Z" class="f-measure"/>
+    </marker>
+    <marker id="f1-af" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,1 L10,5 L0,9 Z" class="f-fg"/>
+    </marker>
+  </defs>
+<rect class="bg" x="0.5" y="0.5" width="899" height="339" rx="8"/>
+
+  <g mask="url(#f1-fade)">
+    <rect class="rod" x="0" y="102" width="562" height="96"/>
+    <rect class="tube" x="560" y="93.7" width="340" height="112.6"/>
+  </g>
+  <line class="rim" x1="560" y1="93.7" x2="560" y2="206.3"/>
+
+  <g class="bracket">
+    <rect x="138" y="16" width="92" height="14" rx="3"/>
+    <rect x="178" y="30" width="12" height="66"/>
+    <rect x="166" y="94" width="36" height="112" rx="6"/>
+  </g>
+  <text class="t" x="244" y="28">Bracket, end cap, or anything</text>
+  <text class="t" x="244" y="46">else attached to the rod</text>
+
+  <text class="t t-cap" x="440" y="146" text-anchor="middle">THIN ROD</text>
+  <text class="t t-mono" x="440" y="166" text-anchor="middle">0.7555 in · 19.19 mm</text>
+  <text class="t t-cap" x="690" y="146" text-anchor="middle">THICK TUBE</text>
+  <text class="t t-mono" x="690" y="166" text-anchor="middle">0.8865 in · 22.52 mm</text>
+
+  <rect class="ring" x="320" y="87" width="15" height="183.4" rx="7.5"/>
+  <rect class="ring" x="544" y="87" width="15" height="183.4" rx="7.5"/>
+  <rect class="ring" x="815" y="78.7" width="15" height="183.4" rx="7.5"/>
+
+  <text class="t t-muted" x="345" y="72">rings slide this way</text>
+  <line class="ln-fg" x1="345" y1="84" x2="420" y2="84" marker-end="url(#f1-af)"/>
+
+  <circle class="catch" cx="560" cy="93.7" r="9"/>
+  <line class="ln-thin" x1="567" y1="87" x2="598" y2="66"/>
+  <text class="t" x="604" y="56">Rings catch on this edge</text>
+  <text class="t t-muted" x="604" y="74">(the rim of the thick tube)</text>
+
+  <line class="ext" x1="202" y1="212" x2="202" y2="312"/>
+  <line class="ext" x1="560" y1="212" x2="560" y2="312"/>
+  <line class="ln-measure" x1="202" y1="300" x2="560" y2="300" marker-start="url(#f1-am)" marker-end="url(#f1-am)"/>
+  <text class="t t-measure" x="381" y="290" text-anchor="middle">MEASURE THIS</text>
+  <text class="t t-muted" x="381" y="326" text-anchor="middle">bare thin rod, from the rim to the first thing in the way</text>
+</svg>

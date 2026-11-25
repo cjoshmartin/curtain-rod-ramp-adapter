@@ -36,7 +36,7 @@ On a telescoping curtain rod, the thin rod slides into a thick tube. The thick t
 | Adapter, widest diameter | 0.989 | 25.12 |
 | Length (ramp + sleeve) | 2.76 | 70 |
 
-These are for one specific rod. **Measure yours** and change them before printing (see below).
+These are for one specific rod. **Measure yours** and change them before printing (see below). [docs/measuring.md](docs/measuring.md) has diagrams of the joint and what was measured.
 
 ## Fit it to your rod
 
@@ -94,6 +94,7 @@ Bambu Studio warns that the object "has floating regions". This is a false alarm
 | `curtain_rod_ramp.stl` | Ready to slice, standing upright for printing. |
 | `curtain_rod_ramp.3mf` | Bambu Studio project for the A1 (see Printing). |
 | `HANDOFF.md` | Design notes, history and known issues. |
+| `docs/measuring.md` | Design record: diagrams of what was measured at the joint, where the adapter sits, and which way the clip opens. |
 | `images/` | The pictures in this README. `sh images/render.sh` re-renders them from `images/views.scad`. |
 
 ## License

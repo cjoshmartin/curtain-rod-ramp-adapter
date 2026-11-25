@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="300" viewBox="0 0 460 300" role="img" aria-labelledby="f3-title">
+  <title id="f3-title">End view looking along the rod. The wall is on the left, the room on the right. The clip's opening faces the room and the ring rides on top.</title>
+<style>
+  :root {
+    --sheet: #ffffff; --fg: #17202c; --muted: #5b6677; --line: #d7dde5;
+    --rod: #c7ced8; --tube: #a2acba; --edge: #687385; --bracket: #3c4450; --wall: #e1e5eb;
+    --ring: #b4842c; --adapter: #2a6fd4; --measure: #d4460c;
+    --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sheet: #171c24; --fg: #e4e8ee; --muted: #9ba6b5; --line: #2a323d;
+      --rod: #48525f; --tube: #5f6a79; --edge: #9ba6b5; --bracket: #c5ccd6; --wall: #252c36;
+      --ring: #d8a851; --adapter: #5d9eff; --measure: #ff7b44;
+    }
+  }
+  .bg { fill: var(--sheet); stroke: var(--line); stroke-width: 1; }
+  .rod { fill: var(--rod); stroke: var(--edge); stroke-width: 1.5; }
+  .tube { fill: var(--tube); stroke: var(--edge); stroke-width: 1.5; }
+  .rim { stroke: var(--fg); stroke-width: 3; }
+  .bracket rect { fill: var(--bracket); }
+  .ring { fill: var(--ring); }
+  .ring-stroke { fill: none; stroke: var(--ring); stroke-width: 15; }
+  .adapter { fill: var(--adapter); fill-opacity: 0.32; stroke: var(--adapter); stroke-width: 2.5; stroke-linejoin: round; }
+  .adapter-solid { fill: var(--adapter); fill-opacity: 0.6; stroke: var(--adapter); stroke-width: 2.5; stroke-linejoin: round; }
+  .wall { fill: var(--wall); stroke: var(--edge); stroke-width: 1.5; }
+  .catch { fill: none; stroke: var(--fg); stroke-width: 2; }
+  .ext { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 4; }
+  .ln-measure { stroke: var(--measure); stroke-width: 2.5; }
+  .ln-muted { stroke: var(--muted); stroke-width: 1.5; }
+  .ln-fg { stroke: var(--fg); stroke-width: 2; }
+  .ln-thin { stroke: var(--fg); stroke-width: 1.2; }
+  .f-measure { fill: var(--measure); }
+  .f-muted { fill: var(--muted); }
+  .f-fg { fill: var(--fg); }
+  .t { fill: var(--fg); font-family: var(--font-sans); font-size: 14px; font-weight: 500; }
+  .t-cap { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; }
+  .t-mono { font-family: var(--font-mono); font-size: 13px; font-weight: 400; }
+  .t-muted { fill: var(--muted); font-weight: 400; }
+  .t-measure { fill: var(--measure); font-weight: 700; letter-spacing: 0.06em; }
+</style>
+  <defs>
+    <marker id="f3-af" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,1 L10,5 L0,9 Z" class="f-fg"/>
+    </marker>
+  </defs>
+<rect class="bg" x="0.5" y="0.5" width="459" height="299" rx="8"/>
+
+  <rect class="wall" x="16" y="16" width="24" height="250"/>
+  <text class="t t-cap" x="28" y="290" text-anchor="middle">WALL</text>
+
+  <circle class="rod" cx="190" cy="140" r="48"/>
+  <path class="adapter-solid" d="M240.79,104.44 A62,62 0 1 0 240.79,175.56 L229.32,167.53 A48,48 0 1 1 229.32,112.47 Z"/>
+  <circle class="ring-stroke" cx="190" cy="154.7" r="84.2"/>
+  <text class="t t-mono" x="190" y="145" text-anchor="middle">rod</text>
+
+  <text class="t" x="190" y="30" text-anchor="middle">Ring rides on top</text>
+  <line class="ln-fg" x1="190" y1="38" x2="190" y2="60" marker-end="url(#f3-af)"/>
+
+  <line class="ln-fg" x1="238" y1="140" x2="372" y2="140" marker-end="url(#f3-af)"/>
+  <text class="t" x="292" y="126">opening faces the room</text>
+  <text class="t t-cap" x="382" y="145">ROOM</text>
+
+  <line class="ln-thin" x1="150" y1="180" x2="150" y2="266"/>
+  <text class="t" x="150" y="284" text-anchor="middle">adapter clip</text>
+</svg>
